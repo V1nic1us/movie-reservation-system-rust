@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+actix-web = { version = "4", features = ["rustls-0_23"] }
+tokio = { version = "1.40.0", features = ["full"] }
+serde = { version = "1.0.209", features = ["derive"] }
+sqlx = { version = "0.8.1", features = ["mysql", "macros", "runtime-tokio"] }
+rustls = "0.23"
+rustls-pemfile = "2"
